@@ -1,0 +1,27 @@
+2023-02-20 16:49:39 error: [Cake\Database\Exception\DatabaseException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_app.user' doesn't exist in /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 160
+Stack Trace:
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:118
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/ORM/Table.php:521
+- /home/kejdi/Documents/my_app/vendor/cakephp/bake/src/Command/ModelCommand.php:111
+- /home/kejdi/Documents/my_app/vendor/cakephp/bake/src/Command/ModelCommand.php:94
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Console/BaseCommand.php:189
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Console/CommandRunner.php:334
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Console/CommandRunner.php:172
+- /home/kejdi/Documents/my_app/bin/cake.php:12
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_app.user' doesn't exist in /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php on line 39
+Stack Trace:
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php:39
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Database/Connection.php:329
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Database/Connection.php:324
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:158
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:118
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/ORM/Table.php:521
+- /home/kejdi/Documents/my_app/vendor/cakephp/bake/src/Command/ModelCommand.php:111
+- /home/kejdi/Documents/my_app/vendor/cakephp/bake/src/Command/ModelCommand.php:94
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Console/BaseCommand.php:189
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Console/CommandRunner.php:334
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Console/CommandRunner.php:172
+- /home/kejdi/Documents/my_app/bin/cake.php:12
+

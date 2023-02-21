@@ -1,0 +1,62 @@
+2023-02-20 16:59:12 error: [Cake\View\Exception\MissingTemplateException] Template file `Users/add.php` could not be found.
+
+The following paths were searched:
+
+- `/home/kejdi/Documents/my_app/templates/Users/add.php`
+- `/home/kejdi/Documents/my_app/vendor/cakephp/cakephp/templates/Users/add.php`
+ in /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/View/View.php on line 1398
+Exception Attributes: array (
+  'file' => 'Users/add.php',
+  'paths' => 
+  array (
+    0 => '/home/kejdi/Documents/my_app/templates/',
+    1 => '/home/kejdi/Documents/my_app/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/View/View.php:805
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Controller/Controller.php:773
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Controller/Controller.php:556
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:174
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/kejdi/Documents/my_app/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /home/kejdi/Documents/my_app/webroot/index.php:40
+
+Request URL: /users/add
+Client IP: 127.0.0.1
+2023-02-20 17:01:01 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or invalid CSRF cookie. in /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 394
+Stack Trace:
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:170
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:162
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:186
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:131
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/kejdi/Documents/my_app/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/kejdi/Documents/my_app/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /home/kejdi/Documents/my_app/webroot/index.php:40
+
+Request URL: /users/add
+Referer URL: http://localhost:8765/users/add
+Client IP: 127.0.0.1
